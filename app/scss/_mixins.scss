@@ -1,0 +1,19 @@
+@mixin font($family, $file, $weight, $style){
+  @font-face {
+    font-family: $family;
+    src:  local(''+$file+''),
+          local($family),
+          url('../fonts/'+$file+'.woff2') format('woff2'),
+          url('../fonts/'+$file+'.woff') format('woff');
+    font-weight: $weight;
+    font-style:  $style;
+    font-display: swap;
+  }
+}
+
+@mixin textlimit($line-clamp: 3){
+  -webkit-line-clamp: $line-clamp; /* Число отображаемых строк */
+  display: -webkit-box; /* Включаем флексбоксы */
+  -webkit-box-orient: vertical; /* Вертикальная ориентация */
+  overflow: hidden; /* Обрезаем всё за пределами блока */
+}

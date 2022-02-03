@@ -1,0 +1,136 @@
+<header class="header">
+  <nav class="header__top">
+    <div class="container">
+      <div class="header__inner">
+        <ul class="info">
+          <li class="info__item">
+            <a class="info__link" href="#">
+              <svg class="icon icon--car">
+                <use xlink:href="images/icons/icons.svg#car"></use>
+              </svg>
+              <span class="info__text">Адрес и время доставки</span>
+            </a>
+          </li>
+          <li class="info__item">
+            <a class="info__link" href="#">
+              <svg class="icon icon--phone">
+                <use xlink:href="images/icons/icons.svg#phone"></use>
+              </svg>
+              <span class="info__text">Горячая линия 24/7</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Доставка</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Новости</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <nav class="header__bottom">
+      <a class="header__logo logo" href="#">
+        <picture class="logo__picture">
+          <source media="(max-width: 1200px)" srcset="images/logo-short-1200.svg">
+          <source media="(max-width: 768px)" srcset="images/logo-short-768.svg">
+          <img class="logo__img" width="200" height="60" src="images/logo.svg" alt="Логотип онлайн-маркета ФрешОк">
+        </picture>
+      </a>
+      <div class="header__catalog catalog">
+        <button class="style-btn style-btn--white catalog__btn" type="button">
+          Каталог продуктов
+        </button>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Овощи и фрукты</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Бакалея</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Молочные продукты</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Хлеб</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Мясо</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Колбаса</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Рыба</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Алкоголь</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Напитки</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Торты</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Мясо</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Чай, кофе</a>
+          </li>
+        </ul>
+      </div>
+      <form class="header__search search">
+        <input class="search__input" type="text" placeholder="Найти в магазине...">
+        <button class="style-btn style-btn--dark search__btn" type="submit">Поиск</button>
+      </form>
+      <ul class="user-menu">
+        <li class="user-menu__item user-menu__search">
+          <button class="user-menu__style user-menu__style--search" type="button">
+            <!--
+            <svg class="icon icon--search-btn">
+              <use xlink:href="images/icons/icons.svg#search-btn"></use>
+            </svg>
+           -->
+            <span class="sr-only">Открыть форму поиска</span>
+          </button>
+        </li>
+        <li class="user-menu__item menu__user">
+          <button class="user-menu__style user-menu__style--user" type="button">
+            <!--
+            <svg class="icon icon--user">
+              <use xlink:href="images/icons/icons.svg#user"></use>
+            </svg>
+           -->
+            <span class="sr-only">Открыть форму регистрации, авторизации пользователя</span>
+          </button>
+        </li>
+        <li class="user-menu__item user-menu__favorite">
+          <button class="user-menu__style user-menu__style--favorite" type="button">
+            <!-- <svg class="icon icon--heart">
+              <use xlink:href="images/icons/icons.svg#heart"></use>
+            </svg>
+          -->
+            <span class="sr-only">Показать избранные товары</span>
+            <span class="user-menu__count">12</span>
+          </button>
+        </li>
+        <li class="user-menu__item user-menu__cart">
+          <button class="user-menu__style user-menu__style--cart" type="button">
+            <!-- <svg class="icon icon--cart">
+              <use xlink:href="images/icons/icons.svg#cart"></use>
+            </svg> -->
+            <span class="sr-only">Открыть корзину с товарами</span>
+            <span class="user-menu__count">12</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

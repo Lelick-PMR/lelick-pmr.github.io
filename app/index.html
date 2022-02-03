@@ -1,12 +1,1153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ФрешОк онлайн-маркет | Главная страница</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="icon" href="favicon.svg" type="image/svg">
+  <link rel="shortcut icon" href="images/ico/ico-32.png" type="image/png" sizes="32x32">
+  <link rel="shortcut icon" href="images/ico/ico-32.svg" type="image/svg" sizes="32x32">
+  <link rel="shortcut icon" href="images/ico/ico-120.png" type="image/png" sizes="120x120">
+  <link rel="shortcut icon" href="images/ico/ico-120.svg" type="image/svg" sizes="120x120">
+  <link rel="shortcut icon" href="images/ico/ico-192.png" type="image/png" sizes="192x192">
+  <link rel="shortcut icon" href="images/ico/ico-192.svg" type="image/svg" sizes="192x192">
+  <link rel="shortcut icon" href="images/ico/ico-512.png" type="image/png" sizes="512x512">
+  <link rel="shortcut icon" href="images/ico/ico-512.svg" type="image/svg" sizes="512x512">
+  <link rel="apple-touch-icon" href="images/ico/apple-touch-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-76.png" type="image/png" sizes="76x76">
+  <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-120.png" type="image/png" sizes="120x120">
+  <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-144.png" type="image/png" sizes="144x144">
+  <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-152.png" type="image/png" sizes="152x152">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
+  <header class="header">
+  <nav class="header__top">
+    <div class="container">
+      <div class="header__inner">
+        <ul class="info">
+          <li class="info__item">
+            <a class="info__link" href="#">
+              <svg class="icon icon--car">
+                <use xlink:href="images/icons/icons.svg#car"></use>
+              </svg>
+              <span class="info__text">Адрес и время доставки</span>
+            </a>
+          </li>
+          <li class="info__item">
+            <a class="info__link" href="#">
+              <svg class="icon icon--phone">
+                <use xlink:href="images/icons/icons.svg#phone"></use>
+              </svg>
+              <span class="info__text">Горячая линия 24/7</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Доставка</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Новости</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <nav class="header__bottom">
+      <a class="header__logo logo" href="#">
+        <picture class="logo__picture">
+          <source media="(max-width: 1200px)" srcset="images/logo-short-1200.svg">
+          <source media="(max-width: 768px)" srcset="images/logo-short-768.svg">
+          <img class="logo__img" width="200" height="60" src="images/logo.svg" alt="Логотип онлайн-маркета ФрешОк">
+        </picture>
+      </a>
+      <div class="header__catalog catalog">
+        <button class="style-btn style-btn--white catalog__btn" type="button">
+          Каталог продуктов
+        </button>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Овощи и фрукты</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Бакалея</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Молочные продукты</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Хлеб</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Мясо</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Колбаса</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Рыба</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Алкоголь</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Напитки</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Торты</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Мясо</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">Чай, кофе</a>
+          </li>
+        </ul>
+      </div>
+      <form class="header__search search">
+        <input class="search__input" type="text" placeholder="Найти в магазине...">
+        <button class="style-btn style-btn--dark search__btn" type="submit">Поиск</button>
+      </form>
+      <ul class="user-menu">
+        <li class="user-menu__item user-menu__search">
+          <button class="user-menu__style user-menu__style--search" type="button">
+            <!--
+            <svg class="icon icon--search-btn">
+              <use xlink:href="images/icons/icons.svg#search-btn"></use>
+            </svg>
+           -->
+            <span class="sr-only">Открыть форму поиска</span>
+          </button>
+        </li>
+        <li class="user-menu__item menu__user">
+          <button class="user-menu__style user-menu__style--user" type="button">
+            <!--
+            <svg class="icon icon--user">
+              <use xlink:href="images/icons/icons.svg#user"></use>
+            </svg>
+           -->
+            <span class="sr-only">Открыть форму регистрации, авторизации пользователя</span>
+          </button>
+        </li>
+        <li class="user-menu__item user-menu__favorite">
+          <button class="user-menu__style user-menu__style--favorite" type="button">
+            <!-- <svg class="icon icon--heart">
+              <use xlink:href="images/icons/icons.svg#heart"></use>
+            </svg>
+          -->
+            <span class="sr-only">Показать избранные товары</span>
+            <span class="user-menu__count">12</span>
+          </button>
+        </li>
+        <li class="user-menu__item user-menu__cart">
+          <button class="user-menu__style user-menu__style--cart" type="button">
+            <!-- <svg class="icon icon--cart">
+              <use xlink:href="images/icons/icons.svg#cart"></use>
+            </svg> -->
+            <span class="sr-only">Открыть корзину с товарами</span>
+            <span class="user-menu__count">12</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <!-- Модальное окно -->
+<div class="modal modal--cart">
+  <div class="modal__cart cart-modal">
+    <div class="cart-modal__top">
+      <h2 class="cart-modal__title">Корзина</h2>
+      <button class="cart-modal__clear-button" type="button">
+        очистить корзину
+      </button>
+      <button class="cart-modal__close-button" type="button">
+        <!-- <img src="images/icons/icon-close.svg" width="18" alt=""> -->
+      </button>
+    </div>
+    <div class="cart-modal__body">
+      <ul class="cart-modal__list">
+
+        <li class="cart-modal__item">
+          <article class="cart-modal__product product">
+            <a href="#" class="product__link">
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
+                alt="Фотография товара: Ананас">
+              <span class="product__circle"></span>
+              <span class="sr-only">Перейти на страницу товара: Ананас</span>
+            </a>
+            <div class="product__info">
+              <h3 class="product__title">
+                Ананас, 1 кг
+              </h3>
+              <span class="product__price">
+                999<span class="product__currency">₽</span>
+              </span>
+            </div>
+            <div class="product__footer">
+              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+                <input class="quantity__text" type="text" name="count" value="1">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+              </div>
+              <span class="product__price">
+                1998<span class="product__currency">₽</span>
+              </span>
+            </div>
+          </article>
+        </li>
+
+        <li class="cart-modal__item">
+          <article class="cart-modal__product product">
+            <a href="#" class="product__link">
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
+                alt="Фотография товара: Ананас">
+              <span class="product__circle"></span>
+              <span class="sr-only">Перейти на страницу товара: Ананас</span>
+            </a>
+            <div class="product__info">
+              <h3 class="product__title">
+                Ананас, 1 кг
+              </h3>
+              <span class="product__price">
+                999<span class="product__currency">₽</span>
+              </span>
+            </div>
+            <div class="product__footer">
+              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+                <input class="quantity__text" type="text" name="count" value="1">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+              </div>
+              <span class="product__price">
+                1998<span class="product__currency">₽</span>
+              </span>
+            </div>
+          </article>
+        </li>
+
+        <li class="cart-modal__item">
+          <article class="cart-modal__product product">
+            <a href="#" class="product__link">
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
+                alt="Фотография товара: Ананас">
+              <span class="product__circle"></span>
+              <span class="sr-only">Перейти на страницу товара: Ананас</span>
+            </a>
+            <div class="product__info">
+              <h3 class="product__title">
+                Ананас, 1 кг
+              </h3>
+              <span class="product__price">
+                999<span class="product__currency">₽</span>
+              </span>
+            </div>
+            <div class="product__footer">
+              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+                <input class="quantity__text" type="text" name="count" value="1">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+              </div>
+              <span class="product__price">
+                1998<span class="product__currency">₽</span>
+              </span>
+            </div>
+          </article>
+        </li>
+        <li class="cart-modal__item">
+          <article class="cart-modal__product product">
+            <a href="#" class="product__link">
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
+                alt="Фотография товара: Ананас">
+              <span class="product__circle"></span>
+              <span class="sr-only">Перейти на страницу товара: Ананас</span>
+            </a>
+            <div class="product__info">
+              <h3 class="product__title">
+                Ананас, 1 кг
+              </h3>
+              <span class="product__price">
+                999<span class="product__currency">₽</span>
+              </span>
+            </div>
+            <div class="product__footer">
+              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+                <input class="quantity__text" type="text" name="count" value="1">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+              </div>
+              <span class="product__price">
+                1998<span class="product__currency">₽</span>
+              </span>
+            </div>
+          </article>
+        </li>
+        <li class="cart-modal__item">
+          <article class="cart-modal__product product">
+            <a href="#" class="product__link">
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
+                alt="Фотография товара: Ананас">
+              <span class="product__circle"></span>
+              <span class="sr-only">Перейти на страницу товара: Ананас</span>
+            </a>
+            <div class="product__info">
+              <h3 class="product__title">
+                Ананас, 1 кг
+              </h3>
+              <span class="product__price">
+                999<span class="product__currency">₽</span>
+              </span>
+            </div>
+            <div class="product__footer">
+              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+                <input class="quantity__text" type="text" name="count" value="1">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+              </div>
+              <span class="product__price">
+                1998<span class="product__currency">₽</span>
+              </span>
+            </div>
+          </article>
+        </li>
+        <li class="cart-modal__item">
+          <article class="cart-modal__product product">
+            <a href="#" class="product__link">
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
+                alt="Фотография товара: Ананас">
+              <span class="product__circle"></span>
+              <span class="sr-only">Перейти на страницу товара: Ананас</span>
+            </a>
+            <div class="product__info">
+              <h3 class="product__title">
+                Ананас, 1 кг
+              </h3>
+              <span class="product__price">
+                999<span class="product__currency">₽</span>
+              </span>
+            </div>
+            <div class="product__footer">
+              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+                <input class="quantity__text" type="text" name="count" value="1">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+              </div>
+              <span class="product__price">
+                1998<span class="product__currency">₽</span>
+              </span>
+            </div>
+          </article>
+        </li>
+        <li class="cart-modal__item">
+          <article class="cart-modal__product product">
+            <a href="#" class="product__link">
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
+                alt="Фотография товара: Ананас">
+              <span class="product__circle"></span>
+              <span class="sr-only">Перейти на страницу товара: Ананас</span>
+            </a>
+            <div class="product__info">
+              <h3 class="product__title">
+                Ананас, 1 кг
+              </h3>
+              <span class="product__price">
+                999<span class="product__currency">₽</span>
+              </span>
+            </div>
+            <div class="product__footer">
+              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+                <input class="quantity__text" type="text" name="count" value="1">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+              </div>
+              <span class="product__price">
+                1998<span class="product__currency">₽</span>
+              </span>
+            </div>
+          </article>
+        </li>
+        <li class="cart-modal__item">
+          <article class="cart-modal__product product">
+            <a href="#" class="product__link">
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
+                alt="Фотография товара: Ананас">
+              <span class="product__circle"></span>
+              <span class="sr-only">Перейти на страницу товара: Ананас</span>
+            </a>
+            <div class="product__info">
+              <h3 class="product__title">
+                Ананас, 1 кг
+              </h3>
+              <span class="product__price">
+                999<span class="product__currency">₽</span>
+              </span>
+            </div>
+            <div class="product__footer">
+              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+                <input class="quantity__text" type="text" name="count" value="1">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+              </div>
+              <span class="product__price">
+                1998<span class="product__currency">₽</span>
+              </span>
+            </div>
+          </article>
+        </li>
+        <li class="cart-modal__item">
+          <article class="cart-modal__product product">
+            <a href="#" class="product__link">
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
+                alt="Фотография товара: Ананас">
+              <span class="product__circle"></span>
+              <span class="sr-only">Перейти на страницу товара: Ананас</span>
+            </a>
+            <div class="product__info">
+              <h3 class="product__title">
+                Ананас, 1 кг
+              </h3>
+              <span class="product__price">
+                999<span class="product__currency">₽</span>
+              </span>
+            </div>
+            <div class="product__footer">
+              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+                <input class="quantity__text" type="text" name="count" value="1">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+              </div>
+              <span class="product__price">
+                1998<span class="product__currency">₽</span>
+              </span>
+            </div>
+          </article>
+        </li>
+        <li class="cart-modal__item">
+          <article class="cart-modal__product product">
+            <a href="#" class="product__link">
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
+                alt="Фотография товара: Ананас">
+              <span class="product__circle"></span>
+              <span class="sr-only">Перейти на страницу товара: Ананас</span>
+            </a>
+            <div class="product__info">
+              <h3 class="product__title">
+                Ананас, 1 кг
+              </h3>
+              <span class="product__price">
+                999<span class="product__currency">₽</span>
+              </span>
+            </div>
+            <div class="product__footer">
+              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+                <input class="quantity__text" type="text" name="count" value="1">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+              </div>
+              <span class="product__price">
+                1998<span class="product__currency">₽</span>
+              </span>
+            </div>
+          </article>
+        </li>
+        <li class="cart-modal__item">
+          <article class="cart-modal__product product">
+            <a href="#" class="product__link">
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
+                alt="Фотография товара: Ананас">
+              <span class="product__circle"></span>
+              <span class="sr-only">Перейти на страницу товара: Ананас</span>
+            </a>
+            <div class="product__info">
+              <h3 class="product__title">
+                Ананас, 1 кг
+              </h3>
+              <span class="product__price">
+                999<span class="product__currency">₽</span>
+              </span>
+            </div>
+            <div class="product__footer">
+              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+                <input class="quantity__text" type="text" name="count" value="1">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+              </div>
+              <span class="product__price">
+                1998<span class="product__currency">₽</span>
+              </span>
+            </div>
+          </article>
+        </li>
+        <li class="cart-modal__item">
+          <article class="cart-modal__product product">
+            <a href="#" class="product__link">
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
+                alt="Фотография товара: Ананас">
+              <span class="product__circle"></span>
+              <span class="sr-only">Перейти на страницу товара: Ананас</span>
+            </a>
+            <div class="product__info">
+              <h3 class="product__title">
+                Ананас, 1 кг
+              </h3>
+              <span class="product__price">
+                999<span class="product__currency">₽</span>
+              </span>
+            </div>
+            <div class="product__footer">
+              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+                <input class="quantity__text" type="text" name="count" value="1">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+              </div>
+              <span class="product__price">
+                1998<span class="product__currency">₽</span>
+              </span>
+            </div>
+          </article>
+        </li>
+        <li class="cart-modal__item">
+          <article class="cart-modal__product product">
+            <a href="#" class="product__link">
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
+                alt="Фотография товара: Ананас">
+              <span class="product__circle"></span>
+              <span class="sr-only">Перейти на страницу товара: Ананас</span>
+            </a>
+            <div class="product__info">
+              <h3 class="product__title">
+                Ананас, 1 кг
+              </h3>
+              <span class="product__price">
+                999<span class="product__currency">₽</span>
+              </span>
+            </div>
+            <div class="product__footer">
+              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+                <input class="quantity__text" type="text" name="count" value="1">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+              </div>
+              <span class="product__price">
+                1998<span class="product__currency">₽</span>
+              </span>
+            </div>
+          </article>
+        </li>
+        <li class="cart-modal__item">
+          <article class="cart-modal__product product">
+            <a href="#" class="product__link">
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
+                alt="Фотография товара: Ананас">
+              <span class="product__circle"></span>
+              <span class="sr-only">Перейти на страницу товара: Ананас</span>
+            </a>
+            <div class="product__info">
+              <h3 class="product__title">
+                Ананас, 1 кг
+              </h3>
+              <span class="product__price">
+                999<span class="product__currency">₽</span>
+              </span>
+            </div>
+            <div class="product__footer">
+              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+                <input class="quantity__text" type="text" name="count" value="1">
+                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+              </div>
+              <span class="product__price">
+                1998<span class="product__currency">₽</span>
+              </span>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div class="cart-modal__footer">
+      <div class="cart-modal__summ">
+        <span class="cart-modal__summ-label">Товаров на сумму</span>
+        <span class="product__price">
+          2038<span class="product__currency">₽</span>
+        </span>
+      </div>
+      <a href="#" class="style-btn style-btn--green cart-modal__checkout">
+        Оформить заказ
+      </a>
+    </div>
+  </div>
+</div>
   
+  <main class="page">
+        <section class="discounts">
+      <ul class="discounts__list">
+
+        <li class="discounts__item">
+          <div class="discounts__slide" style="background-image: url('pictures/discounts/01.jpg');">
+            <div class="container">
+              <div class="discounts__inner">
+                <div class="discounts__content">
+                  <h2 class="discounts__title">
+                    Cвежачок вам в хату
+                    <span class="discounts__title discounts__title--red">
+                      скидка -50%
+                    </span>
+                  </h2>
+                  <p class="discounts__desc">
+                    Только с 7 по 13 июля скидка на сезонные фрукты и овощи до 50%. Торопитесь!
+                  </p>
+                  <a class="style-btn style-btn--green" href="#">Купить сейчас</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="discounts__item">
+          <div class="discounts__slide" style="background-image: url('pictures/discounts/02.jpg');">
+            <div class="container">
+              <div class="discounts__inner">
+                <div class="discounts__content">
+                  <h2 class="discounts__title">
+                    Накрути себе томатов
+                    <span class="discounts__title discounts__title--red">
+                      Акция: 3 кг по цене 1
+                    </span>
+                  </h2>
+                  <p class="discounts__desc">
+                    Только с 12 по 15 июля скидка на домашние помидорчики
+                  </p>
+                  <a class="style-btn style-btn--green" href="#">Купить сейчас</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="discounts__item">
+          <div class="discounts__slide" style="background-image: url('pictures/discounts/03.jpg');">
+            <div class="container">
+              <div class="discounts__inner">
+                <div class="discounts__content">
+                  <h2 class="discounts__title">
+                    Пусть остальные позеленеют от зависти
+                    <span class="discounts__title discounts__title--red">
+                      Распродажа зелени
+                    </span>
+                  </h2>
+
+                  <a class="style-btn style-btn--green" href="#">Купить сейчас</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+    <ul class="privilege">
+
+  <li class="privilege__item privilege__item--delivery">
+    <h2 class="privilege__title">
+      Бесплатная доставка
+    </h2>
+    <p class="privilege__desc">
+      Для заказов на сумму от 500 ₽
+    </p>
+  </li>
+
+  <li class="privilege__item privilege__item--purchase-returns">
+    <h2 class="privilege__title">
+      Возврат товара
+    </h2>
+    <p class="privilege__desc">
+      Если товары были испорчены
+    </p>
+  </li>
+
+  <li class="privilege__item privilege__item--support">
+    <h2 class="privilege__title">
+      Поддержка 24/7
+    </h2>
+    <p class="privilege__desc">
+      Лучшие операторы
+    </p>
+  </li>
+
+</ul>
+    <section class="bestsellers">
+  <div class="container">
+    <h2 class="title">Топовые товары</h2>
+
+    <ul class="bestsellers__filter filter">
+      <li class="filter__item">
+        <button class="filter__btn filter__btn--active" type="button" data-filter="all">
+          Все товары
+        </button>
+      </li>
+      <li class="filter__item">
+        <button class="filter__btn" type="button" data-filter=".category-fruits">
+          Фрукты
+        </button>
+      </li>
+      <li class="filter__item">
+        <button class="filter__btn" type="button" data-filter=".category-vegetables">
+          Овощи
+        </button>
+      </li>
+      <li class="filter__item">
+        <button class="filter__btn" type="button" data-filter=".category-beverages">
+          Напитки
+        </button>
+      </li>
+      <li class="filter__item">
+        <button class="filter__btn" type="button" data-filter=".category-grocery">
+          Бакалея
+        </button>
+      </li>
+    </ul>
+
+    <ul class="bestsellers__list">
+
+      <li class="bestsellers__item mix category-fruits">
+        <article class="bestsellers__product product">
+          <div class="product__statuses">
+            <span class="product__status product__status--new">Новинка</span>
+            <span class="product__status product__status--discount">-50%</span>
+          </div>
+          <button class="product__favorite product__favorite--on" type="button">
+            <svg class="icon icon--heart">
+              <use xlink:href="images/icons/icons.svg#heart"></use>
+            </svg>
+            <span class="sr-only">Добавить товар: Ананас в избранное</span>
+          </button>
+          <a href="#" class="product__link">
+            <img class="product__img" width="100%" height="215" src="pictures/products/01.jpg"
+              alt="Фотография товара: Ананас">
+            <span class="product__circle"></span>
+            <span class="sr-only">Перейти на страницу товара: Ананас</span>
+          </a>
+          <h3 class="product__title">
+            <a class="product__title-link" href="#">Ананас, 1кг</a>
+          </h3>
+          <div class="product__footer">
+            <div class="product__prices">
+              <span class="product__price product__price--old">
+                1999 ₽
+              </span>
+              <span class="product__price">
+                999 ₽
+              </span>
+            </div>
+            <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+              <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+              <input class="quantity__text" type="text" name="count" value="1">
+              <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+            </div>
+            <button class="style-btn style-btn--green product__btn-add-to-cart" type="button">
+              <svg class="icon icon--cart-small">
+                <use xlink:href="images/icons/icons.svg#cart"></use>
+              </svg>
+              <span class="sr-only">
+                Добавить товар в корзину
+              </span>
+            </button>
+          </div>
+        </article>
+      </li>
+
+      <li class="bestsellers__item mix category-fruits">
+        <article class="bestsellers__product product">
+
+          <button class="product__favorite" type="button">
+            <svg class="icon icon--heart">
+              <use xlink:href="images/icons/icons.svg#heart"></use>
+            </svg>
+            <span class="sr-only">Добавить товар: Лимон в избранное</span>
+          </button>
+          <a href="#" class="product__link">
+            <img class="product__img" width="298" height="215" src="pictures/products/02.jpg"
+              alt="Фотография товара: Ананас">
+            <span class="product__circle"></span>
+            <span class="sr-only">Перейти на страницу товара: Лимон</span>
+          </a>
+
+          <h3 class="product__title">
+            <a class="product__title-link" href="#">Лимон, 1кг</a>
+          </h3>
+          <div class="product__footer">
+            <div class="product__prices">
+              <span class="product__price">
+                199 ₽
+              </span>
+            </div>
+            <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+              <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+              <input class="quantity__text" type="text" name="count" value="1">
+              <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+            </div>
+            <button class="style-btn style-btn--green product__btn-add-to-cart" type="button">
+              <svg class="icon icon--cart-small">
+                <use xlink:href="images/icons/icons.svg#cart"></use>
+              </svg>
+              <span class="sr-only">
+                Добавить товар в корзину
+              </span>
+            </button>
+          </div>
+        </article>
+      </li>
+
+      <li class="bestsellers__item mix category-fruits">
+        <article class="bestsellers__product product">
+          <div class="product__statuses">
+            <span class="product__status product__status--bestseller">Хит</span>
+          </div>
+          <button class="product__favorite" type="button">
+            <svg class="icon icon--heart">
+              <use xlink:href="images/icons/icons.svg#heart"></use>
+            </svg>
+            <span class="sr-only">Добавить товар: Питахайя красная с белой мякотью в избранное</span>
+          </button>
+          <a href="#" class="product__link">
+            <img class="product__img" width="298" height="215" src="pictures/products/03.jpg"
+              alt="Фотография товара: Ананас">
+            <span class="product__circle"></span>
+            <span class="sr-only">Перейти на страницу товара: Питахайя красная с белой мякотью</span>
+          </a>
+          <h3 class="product__title">
+            <a class="product__title-link" href="#">Питахайя красная с белой мякотью, 1шт</a>
+          </h3>
+          <div class="product__footer">
+            <div class="product__prices">
+              <span class="product__price">
+                1019 ₽
+              </span>
+            </div>
+            <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+              <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+              <input class="quantity__text" type="text" name="count" value="1">
+              <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+            </div>
+            <button class="style-btn style-btn--green product__btn-add-to-cart" type="button">
+              <svg class="icon icon--cart-small">
+                <use xlink:href="images/icons/icons.svg#cart"></use>
+              </svg>
+              <span class="sr-only">
+                Добавить товар в корзину
+              </span>
+            </button>
+          </div>
+        </article>
+      </li>
+
+      <li class="bestsellers__item mix category-fruits">
+        <article class="bestsellers__product product">
+          <div class="product__statuses">
+          </div>
+          <button class="product__favorite" type="button">
+            <svg class="icon icon--heart">
+              <use xlink:href="images/icons/icons.svg#heart"></use>
+            </svg>
+            <span class="sr-only">Добавить товар: Кетчуп томатный детский органический Bio-Zentrale в избранное</span>
+          </button>
+          <a href="#" class="product__link">
+            <img class="product__img" width="298" height="215" src="pictures/products/04.jpg"
+              alt="Фотография товара: Ананас">
+            <span class="product__circle"></span>
+            <span class="sr-only">Перейти на страницу товара: Кетчуп томатный детский органический Bio-Zentrale</span>
+          </a>
+          <h3 class="product__title">
+            <a class="product__title-link" href="#">Кетчуп томатный детский органическийBio-Zentrale 500мл, 1 шт</a> 
+          </h3>
+          <div class="product__footer">
+            <div class="product__prices">
+              <span class="product__price">
+                600 ₽
+              </span>
+            </div>
+            <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+              <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+              <input class="quantity__text" type="text" name="count" value="1">
+              <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+            </div>
+            <button class="style-btn style-btn--green product__btn-add-to-cart" type="button">
+              <svg class="icon icon--cart-small">
+                <use xlink:href="images/icons/icons.svg#cart"></use>
+              </svg>
+              <span class="sr-only">
+                Добавить товар в корзину
+              </span>
+            </button>
+          </div>
+        </article>
+      </li>
+
+      <li class="bestsellers__item mix category-fruits">
+        <article class="bestsellers__product product">
+          <div class="product__statuses">
+            <span class="product__status product__status--new">Новинка</span>
+            <span class="product__status product__status--discount">-50%</span>
+            <span class="product__status product__status--bestseller">Хит</span>
+          </div>
+          <button class="product__favorite" type="button">
+            <svg class="icon icon--heart">
+              <use xlink:href="images/icons/icons.svg#heart"></use>
+            </svg>
+            <span class="sr-only">Добавить товар: Морковь молодая</span>
+          </button>
+          <a href="#" class="product__link">
+            <img class="product__img" width="298" height="215" src="pictures/products/05.jpg"
+              alt="Фотография товара: Ананас">
+            <span class="product__circle"></span>
+            <span class="sr-only">Перейти на страницу товара: Морковь молодая</span>
+          </a>
+          <h3 class="product__title">
+            <a class="product__title-link" href="#">Морковь молодая с бабушкиной грядки, 1кг</a>
+          </h3>
+          <div class="product__footer">
+            <div class="product__prices">
+              <span class="product__price">
+                49 ₽
+              </span>
+            </div>
+            <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+              <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+              <input class="quantity__text" type="text" name="count" value="1">
+              <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+            </div>
+            <button class="style-btn style-btn--green product__btn-add-to-cart" type="button">
+              <svg class="icon icon--cart-small">
+                <use xlink:href="images/icons/icons.svg#cart"></use>
+              </svg>
+              <span class="sr-only">
+                Добавить товар в корзину
+              </span>
+            </button>
+          </div>
+        </article>
+      </li>
+
+      <li class="bestsellers__item mix category-fruits">
+        <article class="bestsellers__product product">
+          <div class="product__statuses">
+            <span class="product__status product__status--discount">-30%</span>
+          </div>
+          <button class="product__favorite product__favorite--on" type="button">
+            <svg class="icon icon--heart">
+              <use xlink:href="images/icons/icons.svg#heart"></use>
+            </svg>
+            <span class="sr-only">Добавить товар: Напиток сокосодержащий Sanpellegrino Aranciata Orange</span>
+          </button>
+          <a href="#" class="product__link">
+            <img class="product__img" width="298" height="215" src="pictures/products/06.jpg"
+              alt="Фотография товара: Ананас">
+            <span class="product__circle"></span>
+            <span class="sr-only">Перейти на страницу товара: Напиток сокосодержащий Sanpellegrino Aranciata
+              Orange</span>
+          </a>
+          <h3 class="product__title">
+            <a class="product__title-link" href="#">Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольный напиток очень-очень
+            вкусный прям.</a>
+          </h3>
+          <div class="product__footer">
+            <div class="product__prices">
+              <span class="product__price product__price--old">
+                299 ₽
+              </span>
+              <span class="product__price">
+                199 ₽
+              </span>
+            </div>
+            <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+              <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+              <input class="quantity__text" type="text" name="count" value="1">
+              <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+            </div>
+            <button class="style-btn style-btn--green product__btn-add-to-cart" type="button">
+              <svg class="icon icon--cart-small">
+                <use xlink:href="images/icons/icons.svg#cart"></use>
+              </svg>
+              <span class="sr-only">
+                Добавить товар в корзину
+              </span>
+            </button>
+          </div>
+        </article>
+      </li>
+
+      <li class="bestsellers__item mix category-fruits">
+        <article class="bestsellers__product product">
+          <div class="product__statuses">
+            <span class="product__status product__status--new">Новинка</span>
+          </div>
+          <button class="product__favorite product__favorite--on" type="button">
+            <svg class="icon icon--heart">
+              <use xlink:href="images/icons/icons.svg#heart"></use>
+            </svg>
+            <span class="sr-only">Добавить товар: Кофе с коноплей органический Caffé Salomoni</span>
+          </button>
+          <a href="#" class="product__link">
+            <img class="product__img" width="298" height="215" src="pictures/products/07.jpg"
+              alt="Фотография товара: Ананас">
+            <span class="product__circle"></span>
+            <span class="sr-only">Перейти на страницу товара: Кофе с коноплей органический Caffé Salomoni</span>
+          </a>
+          <h3 class="product__title">
+            <a class="product__title-link" href="#">Кофе с коноплей органический Caffé Salomoni 250г</a>
+          </h3>
+          <div class="product__footer">
+            <div class="product__prices">
+              <span class="product__price">
+                877 ₽
+              </span>
+            </div>
+            <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+              <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+              <input class="quantity__text" type="text" name="count" value="1">
+              <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+            </div>
+            <button class="style-btn style-btn--green product__btn-add-to-cart" type="button">
+              <svg class="icon icon--cart-small">
+                <use xlink:href="images/icons/icons.svg#cart"></use>
+              </svg>
+              <span class="sr-only">
+                Добавить товар в корзину
+              </span>
+            </button>
+          </div>
+        </article>
+      </li>
+
+      <li class="bestsellers__item mix category-fruits">
+        <article class="bestsellers__product product">
+          <div class="product__statuses">
+            <span class="product__status product__status--new">Новинка</span>
+          </div>
+          <button class="product__favorite" type="button">
+            <svg class="icon icon--heart">
+              <use xlink:href="images/icons/icons.svg#heart"></use>
+            </svg>
+            <span class="sr-only">Добавить товар: Перец оранжевый в избранное</span>
+          </button>
+          <a href="#" class="product__link">
+            <img class="product__img" width="298" height="215" src="pictures/products/08.jpg"
+              alt="Фотография товара: Ананас">
+            <span class="product__circle"></span>
+            <span class="sr-only">Перейти на страницу товара: Перец оранжевый</span>
+          </a>
+          <h3 class="product__title">
+            <a class="product__title-link" href="#">Перец оранжевый, 1кг</a>
+          </h3>
+          <div class="product__footer">
+            <div class="product__prices">
+              <span class="product__price">
+                349 ₽
+              </span>
+            </div>
+            <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
+              <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
+              <input class="quantity__text" type="text" name="count" value="1">
+              <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
+            </div>
+            <button class="style-btn style-btn--green product__btn-add-to-cart" type="button">
+              <svg class="icon icon--cart-small">
+                <use xlink:href="images/icons/icons.svg#cart"></use>
+              </svg>
+              <span class="sr-only">
+                Добавить товар в корзину
+              </span>
+            </button>
+          </div>
+        </article>
+      </li>
+
+    </ul>
+
+    <button class="style-btn style-btn--white bestsellers__btn-show-more" type="button">
+      Показать еще
+    </button>
+
+  </div>
+</section>
+
+    <section class="banner"></section>
+    <section class="promo"></section>
+    <div class="brand"></div>
+    <section class="news"></section>
+  </main>
+  <footer class="footer">
+  <div class="footer__top">
+    <div class="footer__logo"></div>
+    <div class="footer__content">
+      <form action="">
+        <label for="subscribe">Следите за нашими акциями</label>
+        <input type="text" id="subscribe">
+        <button>Подписаться</button>
+      </form>
+
+      <ul class="footer__menu menu-footer">
+        <li class="menu-footer__list">
+          <a class="menu-footer__link footer-link" href="#">О нас</a>
+        </li>
+        <li class="menu-footer__list">
+          <a class="menu-footer__link footer-link" href="#">Контакты</a>
+        </li>
+        <li class="menu-footer__list">
+          <a class="menu-footer__link footer-link" href="#">Публичная оферта</a>
+        </li>
+        <li class="menu-footer__list">
+          <a class="menu-footer__link footer-link" href="#">Оплата и доставка</a>
+        </li>
+        <li class="menu-footer__list">
+          <a class="menu-footer__link footer-link" href="#">Вакансии</a>
+        </li>
+        <li class="menu-footer__list">
+          <a class="menu-footer__link footer-link" href="#">Акции</a>
+        </li>
+        <li class="menu-footer__list">
+          <a class="menu-footer__link footer-link" href="#">Отзывы</a>
+        </li>
+        <li class="menu-footer__list">
+          <a class="menu-footer__link footer-link" href="#">Новости</a>
+        </li>
+      </ul>
+
+      <address class="footer__address">
+        <a class="footer-link" href="tel:+7907288365">Горячая линия +7 907 288 365</a>
+        <p class="footer__text"></p>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank"></a>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </div>
+  <div class="footer__bottom">
+
+  </div>
+</footer>
+
+  <script src="js/main.min.js"></script>
 </body>
+
 </html>
