@@ -1,0 +1,307 @@
+.open-sans {
+  font-family: Open Sans;
+  .bold {
+    font-weight: 700;
+    .14px {
+      line-height: 1;
+      letter-spacing: 0.03em;
+    }
+    .14px {
+      line-height: 1.3;
+    }
+    .13px {
+      line-height: 1.4;
+      letter-spacing: 0.03em;
+    }
+    .12px {
+      line-height: 1.35;
+    }
+    .10px {
+      line-height: 1;
+      letter-spacing: 0.03em;
+    }
+    .10px {
+      line-height: 1.4;
+      letter-spacing: 0.1em;
+    }
+  }
+  .semi-bold {
+    font-weight: 600;
+    .24px {
+      font-size: 24px;
+      line-height: 1;
+    }
+    .16px {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .14px {
+      font-size: 14px;
+      line-height: 1.4;
+      letter-spacing: 0.03em;
+    }
+    .10px {
+      font-size: 10px;
+      line-height: 1;
+      letter-spacing: 0.03em;
+    }
+  }
+}
+
+// Заголовок новостей 
+.news-title {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  /* Head */
+  color: #121212;
+}
+
+// название товара в корзине
+.product-title {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+  letter-spacing: 0.03em;
+  color: #121212;
+}
+
+// Товаров на сумму в корзине + просто цена в корзине
+.total-price {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  /* identical to box height, or 24px */
+  letter-spacing: 0.03em;
+  color: #505050;
+}
+
+//Кнопка поиска в шапке
+.catalog-btn {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+  letter-spacing: 0.03em;
+  color: #63A60E;
+}
+
+
+//Кнопка поиска в шапке
+.search-btn {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+// Количество в корзине и фавориты
+.count-label {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 100%;
+  /* identical to box height, or 10px */
+  letter-spacing: 0.03em;
+  color: #CF3E3B;
+}
+
+// Статус товара или лейбл
+.status-product {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 100%;
+  /* identical to box height, or 10px */
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+// Рейтинг 4.9
+.rate {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+  letter-spacing: 0.03em;
+  color: #505050;
+}
+
+// Ссылка ВСЕ НОВОСТИ 
+.all-news {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  /* or 18px */
+  color: #63A60E;
+}
+
+.news-mounth {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  /* Head */
+  color: #121212;
+}
+
+//Кнопка подписаться внизу страницы
+.subscribe-btn {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+// Ссылки вверху хэдера top header
+.header__top {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  /* White */
+  color: #FFFFFF;
+}
+
+// Заголовки
+.titles {
+  font-family: Ruda;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  /* identical to box height, or 45px */
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /* Head */
+  color: #121212;
+  &--mobile {
+    font-family: Ruda;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    /* Head */
+    color: #121212;
+  }
+}
+
+.banners {
+  &__title-white {
+    font-family: Ruda;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 140%;
+    /* or 42px */
+    text-transform: uppercase;
+    /* White */
+    color: #FFFFFF;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+    &--mobile {
+      font-family: Ruda;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 140%;
+      /* or 34px */
+      text-transform: uppercase;
+      /* White */
+      color: #FFFFFF;
+      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+  &__title-dark {
+    font-family: Ruda;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 40px;
+    /* or 138% */
+    text-transform: uppercase;
+    color: #505050;
+    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.5);
+    &--mobile {
+      font-family: Ruda;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 140%;
+      /* or 34px */
+      text-transform: uppercase;
+      color: #505050;
+    }
+  }
+}
+
+// Новости
+.news {
+  &__data {
+    font-family: Ruda;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    /* identical to box height, or 100% */
+    text-align: center;
+    text-transform: uppercase;
+    /* Head */
+    color: #121212;
+    &--mobile {
+      font-family: Ruda;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 30px;
+      /* identical to box height, or 100% */
+      text-align: center;
+      text-transform: uppercase;
+      /* Head */
+      color: #121212;
+    }
+  }
+}
+
+//Заголовок в слайдере (адаптив)
+.slider {
+  font-family: Ruda;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 130%;
+  /* or 78px */
+  text-transform: uppercase;
+  color: #505050;
+  &__mobile {
+      font-family: Ruda;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+      /* or 26px */
+      text-transform: uppercase;
+      color: #505050;
+  }
+}
+
+// Очистить корзину ссылка в корзине (константа)
+.cart {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  /* identical to box height, or 17px */
+  letter-spacing: 0.03em;
+  color: #000000;
+}

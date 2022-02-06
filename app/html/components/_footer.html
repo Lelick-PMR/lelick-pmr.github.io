@@ -1,61 +1,113 @@
 <footer class="footer">
-  <div class="footer__top">
-    <div class="footer__logo"></div>
-    <div class="footer__content">
-      <form action="">
-        <label for="subscribe">Следите за нашими акциями</label>
-        <input type="text" id="subscribe">
-        <button>Подписаться</button>
-      </form>
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__logo">
+        <a class="logo" href="#">
+          <img class="logo__img" width="200" height="60" src="images/logo.svg" alt="Логотип онлайн-маркета ФрешОк">
+        </a>
+      </div>
+      <div class="footer__content">
+        <form class="footer__subscribe subscribe" action="/">
+          <label class="subscribe__label" for="subscribe">Следите за нашими акциями</label>
+          <div class="subscribe__wrap">
+            <input class="subscribe__email" id="subscribe" type="email" placeholder="email@email.com" name="email"
+              required>
+            <button class="style-btn style-btn--green subscribe__btn" type="submit">Подписаться</button>
+          </div>
+        </form>
 
-      <ul class="footer__menu menu-footer">
-        <li class="menu-footer__list">
-          <a class="menu-footer__link footer-link" href="#">О нас</a>
-        </li>
-        <li class="menu-footer__list">
-          <a class="menu-footer__link footer-link" href="#">Контакты</a>
-        </li>
-        <li class="menu-footer__list">
-          <a class="menu-footer__link footer-link" href="#">Публичная оферта</a>
-        </li>
-        <li class="menu-footer__list">
-          <a class="menu-footer__link footer-link" href="#">Оплата и доставка</a>
-        </li>
-        <li class="menu-footer__list">
-          <a class="menu-footer__link footer-link" href="#">Вакансии</a>
-        </li>
-        <li class="menu-footer__list">
-          <a class="menu-footer__link footer-link" href="#">Акции</a>
-        </li>
-        <li class="menu-footer__list">
-          <a class="menu-footer__link footer-link" href="#">Отзывы</a>
-        </li>
-        <li class="menu-footer__list">
-          <a class="menu-footer__link footer-link" href="#">Новости</a>
-        </li>
-      </ul>
+        <ul class="footer__menu menu-footer">
+          <li class="menu-footer__item">
+            <a class="menu-footer__link footer-link" href="#">О нас</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link footer-link" href="#">Контакты</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link footer-link" href="#">Публичная оферта</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link footer-link" href="#">Оплата и доставка</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link footer-link" href="#">Вакансии</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link footer-link" href="#">Акции</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link footer-link" href="#">Отзывы</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link footer-link" href="#">Новости</a>
+          </li>
 
-      <address class="footer__address">
-        <a class="footer-link" href="tel:+7907288365">Горячая линия +7 907 288 365</a>
-        <p class="footer__text"></p>
-        <ul class="footer__social social">
-          <li class="social__item">
-            <a class="social__link" href="#" target="_blank"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" target="_blank"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" target="_blank"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" target="_blank"></a>
-          </li>
         </ul>
-      </address>
+
+        <address class="footer__address address">
+          <a class="address__tel" href="tel:+7907288365">Горячая линия+7 907 288 365</a>
+          <p class="address__location">Санкт-Петербург, ул. Ленина, 1</p>
+          <ul class="address__social social">
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <svg class="icon icon--facebook">
+                  <use xlink:href="images/icons/icons.svg#facebook"></use>
+                </svg>
+                <span class="sr-only">Мы на facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <svg class="icon icon--youtube">
+                  <use xlink:href="images/icons/icons.svg#youtube"></use>
+                </svg>
+                <span class="sr-only">Мы в YouTube</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <svg class="icon icon--telegram">
+                  <use xlink:href="images/icons/icons.svg#telegram"></use>
+                </svg>
+                <span class="sr-only">Наш канал в Telegram</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <svg class="icon icon--instagram">
+                  <use xlink:href="images/icons/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+
+      </div>
     </div>
   </div>
-  <div class="footer__bottom">
-
+  <div class="footer__bottom footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__wrap">
+        <p class="copyright">© 2021 ФрешОк</p>
+        <ul class="payments">
+          <li class="payments__item">
+            <a class="payments__link" href="#">
+              <svg class="icon icon--visa">
+                <use xlink:href="images/icons/icons.svg#visa"></use>
+              </svg>
+              <span class="sr-only">Принимаем платежи по карте Visa, узнать подробнее.</span>
+            </a>
+          </li>
+          <li class="payments__item">
+            <a class="payments__link" href="#">
+              <svg class="icon icon--mastercard">
+                <use xlink:href="images/icons/icons.svg#mastercard"></use>
+              </svg>
+              <span class="sr-only">Принимаем платежи по карте MasterCard, узнать подробнее.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </footer>

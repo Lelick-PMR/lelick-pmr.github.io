@@ -121,39 +121,22 @@
       <ul class="user-menu">
         <li class="user-menu__item user-menu__search">
           <button class="user-menu__style user-menu__style--search" type="button">
-            <!--
-            <svg class="icon icon--search-btn">
-              <use xlink:href="images/icons/icons.svg#search-btn"></use>
-            </svg>
-           -->
             <span class="sr-only">Открыть форму поиска</span>
           </button>
         </li>
         <li class="user-menu__item menu__user">
           <button class="user-menu__style user-menu__style--user" type="button">
-            <!--
-            <svg class="icon icon--user">
-              <use xlink:href="images/icons/icons.svg#user"></use>
-            </svg>
-           -->
-            <span class="sr-only">Открыть форму регистрации, авторизации пользователя</span>
+            <span class="sr-only">Открыть форму авторизации и регистрации пользователя</span>
           </button>
         </li>
         <li class="user-menu__item user-menu__favorite">
           <button class="user-menu__style user-menu__style--favorite" type="button">
-            <!-- <svg class="icon icon--heart">
-              <use xlink:href="images/icons/icons.svg#heart"></use>
-            </svg>
-          -->
             <span class="sr-only">Показать избранные товары</span>
             <span class="user-menu__count">12</span>
           </button>
         </li>
         <li class="user-menu__item user-menu__cart">
           <button class="user-menu__style user-menu__style--cart" type="button">
-            <!-- <svg class="icon icon--cart">
-              <use xlink:href="images/icons/icons.svg#cart"></use>
-            </svg> -->
             <span class="sr-only">Открыть корзину с товарами</span>
             <span class="user-menu__count">12</span>
           </button>
@@ -167,27 +150,25 @@
   <div class="modal__cart cart-modal">
     <div class="cart-modal__top">
       <h2 class="cart-modal__title">Корзина</h2>
-      <button class="cart-modal__clear-button" type="button">
+      <button class="cart-modal__clear-btn" type="button">
         очистить корзину
       </button>
-      <button class="cart-modal__close-button" type="button">
-        <!-- <img src="images/icons/icon-close.svg" width="18" alt=""> -->
-      </button>
+      <button class="small-btn cart-modal__close-btn" type="button"></button>
     </div>
     <div class="cart-modal__body">
       <ul class="cart-modal__list">
 
         <li class="cart-modal__item">
           <article class="cart-modal__product product">
+            <button class="small-btn product__del-btn" type="button"></button>
             <a href="#" class="product__link">
               <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
                 alt="Фотография товара: Ананас">
-              <span class="product__circle"></span>
               <span class="sr-only">Перейти на страницу товара: Ананас</span>
             </a>
             <div class="product__info">
               <h3 class="product__title">
-                Ананас, 1 кг
+                <a class="product__title-link" href="#">Ананас, 1 кг</a>
               </h3>
               <span class="product__price">
                 999<span class="product__currency">₽</span>
@@ -208,15 +189,14 @@
 
         <li class="cart-modal__item">
           <article class="cart-modal__product product">
+            <button class="small-btn product__del-btn" type="button"></button>
             <a href="#" class="product__link">
-              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
-                alt="Фотография товара: Ананас">
-              <span class="product__circle"></span>
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg" alt="Фотография товара: Ананас">
               <span class="sr-only">Перейти на страницу товара: Ананас</span>
             </a>
             <div class="product__info">
               <h3 class="product__title">
-                Ананас, 1 кг
+                <a class="product__title-link" href="#">Ананас, 1 кг</a>
               </h3>
               <span class="product__price">
                 999<span class="product__currency">₽</span>
@@ -237,15 +217,14 @@
 
         <li class="cart-modal__item">
           <article class="cart-modal__product product">
+            <button class="small-btn product__del-btn" type="button"></button>
             <a href="#" class="product__link">
-              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
-                alt="Фотография товара: Ананас">
-              <span class="product__circle"></span>
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg" alt="Фотография товара: Ананас">
               <span class="sr-only">Перейти на страницу товара: Ананас</span>
             </a>
             <div class="product__info">
               <h3 class="product__title">
-                Ананас, 1 кг
+                <a class="product__title-link" href="#">Ананас, 1 кг</a>
               </h3>
               <span class="product__price">
                 999<span class="product__currency">₽</span>
@@ -263,17 +242,17 @@
             </div>
           </article>
         </li>
+
         <li class="cart-modal__item">
           <article class="cart-modal__product product">
+            <button class="small-btn product__del-btn" type="button"></button>
             <a href="#" class="product__link">
-              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
-                alt="Фотография товара: Ананас">
-              <span class="product__circle"></span>
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg" alt="Фотография товара: Ананас">
               <span class="sr-only">Перейти на страницу товара: Ананас</span>
             </a>
             <div class="product__info">
               <h3 class="product__title">
-                Ананас, 1 кг
+                <a class="product__title-link" href="#">Ананас, 1 кг</a>
               </h3>
               <span class="product__price">
                 999<span class="product__currency">₽</span>
@@ -291,269 +270,17 @@
             </div>
           </article>
         </li>
+
         <li class="cart-modal__item">
           <article class="cart-modal__product product">
+            <button class="small-btn product__del-btn" type="button"></button>
             <a href="#" class="product__link">
-              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
-                alt="Фотография товара: Ананас">
-              <span class="product__circle"></span>
+              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg" alt="Фотография товара: Ананас">
               <span class="sr-only">Перейти на страницу товара: Ананас</span>
             </a>
             <div class="product__info">
               <h3 class="product__title">
-                Ананас, 1 кг
-              </h3>
-              <span class="product__price">
-                999<span class="product__currency">₽</span>
-              </span>
-            </div>
-            <div class="product__footer">
-              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
-                <input class="quantity__text" type="text" name="count" value="1">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
-              </div>
-              <span class="product__price">
-                1998<span class="product__currency">₽</span>
-              </span>
-            </div>
-          </article>
-        </li>
-        <li class="cart-modal__item">
-          <article class="cart-modal__product product">
-            <a href="#" class="product__link">
-              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
-                alt="Фотография товара: Ананас">
-              <span class="product__circle"></span>
-              <span class="sr-only">Перейти на страницу товара: Ананас</span>
-            </a>
-            <div class="product__info">
-              <h3 class="product__title">
-                Ананас, 1 кг
-              </h3>
-              <span class="product__price">
-                999<span class="product__currency">₽</span>
-              </span>
-            </div>
-            <div class="product__footer">
-              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
-                <input class="quantity__text" type="text" name="count" value="1">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
-              </div>
-              <span class="product__price">
-                1998<span class="product__currency">₽</span>
-              </span>
-            </div>
-          </article>
-        </li>
-        <li class="cart-modal__item">
-          <article class="cart-modal__product product">
-            <a href="#" class="product__link">
-              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
-                alt="Фотография товара: Ананас">
-              <span class="product__circle"></span>
-              <span class="sr-only">Перейти на страницу товара: Ананас</span>
-            </a>
-            <div class="product__info">
-              <h3 class="product__title">
-                Ананас, 1 кг
-              </h3>
-              <span class="product__price">
-                999<span class="product__currency">₽</span>
-              </span>
-            </div>
-            <div class="product__footer">
-              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
-                <input class="quantity__text" type="text" name="count" value="1">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
-              </div>
-              <span class="product__price">
-                1998<span class="product__currency">₽</span>
-              </span>
-            </div>
-          </article>
-        </li>
-        <li class="cart-modal__item">
-          <article class="cart-modal__product product">
-            <a href="#" class="product__link">
-              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
-                alt="Фотография товара: Ананас">
-              <span class="product__circle"></span>
-              <span class="sr-only">Перейти на страницу товара: Ананас</span>
-            </a>
-            <div class="product__info">
-              <h3 class="product__title">
-                Ананас, 1 кг
-              </h3>
-              <span class="product__price">
-                999<span class="product__currency">₽</span>
-              </span>
-            </div>
-            <div class="product__footer">
-              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
-                <input class="quantity__text" type="text" name="count" value="1">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
-              </div>
-              <span class="product__price">
-                1998<span class="product__currency">₽</span>
-              </span>
-            </div>
-          </article>
-        </li>
-        <li class="cart-modal__item">
-          <article class="cart-modal__product product">
-            <a href="#" class="product__link">
-              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
-                alt="Фотография товара: Ананас">
-              <span class="product__circle"></span>
-              <span class="sr-only">Перейти на страницу товара: Ананас</span>
-            </a>
-            <div class="product__info">
-              <h3 class="product__title">
-                Ананас, 1 кг
-              </h3>
-              <span class="product__price">
-                999<span class="product__currency">₽</span>
-              </span>
-            </div>
-            <div class="product__footer">
-              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
-                <input class="quantity__text" type="text" name="count" value="1">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
-              </div>
-              <span class="product__price">
-                1998<span class="product__currency">₽</span>
-              </span>
-            </div>
-          </article>
-        </li>
-        <li class="cart-modal__item">
-          <article class="cart-modal__product product">
-            <a href="#" class="product__link">
-              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
-                alt="Фотография товара: Ананас">
-              <span class="product__circle"></span>
-              <span class="sr-only">Перейти на страницу товара: Ананас</span>
-            </a>
-            <div class="product__info">
-              <h3 class="product__title">
-                Ананас, 1 кг
-              </h3>
-              <span class="product__price">
-                999<span class="product__currency">₽</span>
-              </span>
-            </div>
-            <div class="product__footer">
-              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
-                <input class="quantity__text" type="text" name="count" value="1">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
-              </div>
-              <span class="product__price">
-                1998<span class="product__currency">₽</span>
-              </span>
-            </div>
-          </article>
-        </li>
-        <li class="cart-modal__item">
-          <article class="cart-modal__product product">
-            <a href="#" class="product__link">
-              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
-                alt="Фотография товара: Ананас">
-              <span class="product__circle"></span>
-              <span class="sr-only">Перейти на страницу товара: Ананас</span>
-            </a>
-            <div class="product__info">
-              <h3 class="product__title">
-                Ананас, 1 кг
-              </h3>
-              <span class="product__price">
-                999<span class="product__currency">₽</span>
-              </span>
-            </div>
-            <div class="product__footer">
-              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
-                <input class="quantity__text" type="text" name="count" value="1">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
-              </div>
-              <span class="product__price">
-                1998<span class="product__currency">₽</span>
-              </span>
-            </div>
-          </article>
-        </li>
-        <li class="cart-modal__item">
-          <article class="cart-modal__product product">
-            <a href="#" class="product__link">
-              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
-                alt="Фотография товара: Ананас">
-              <span class="product__circle"></span>
-              <span class="sr-only">Перейти на страницу товара: Ананас</span>
-            </a>
-            <div class="product__info">
-              <h3 class="product__title">
-                Ананас, 1 кг
-              </h3>
-              <span class="product__price">
-                999<span class="product__currency">₽</span>
-              </span>
-            </div>
-            <div class="product__footer">
-              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
-                <input class="quantity__text" type="text" name="count" value="1">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
-              </div>
-              <span class="product__price">
-                1998<span class="product__currency">₽</span>
-              </span>
-            </div>
-          </article>
-        </li>
-        <li class="cart-modal__item">
-          <article class="cart-modal__product product">
-            <a href="#" class="product__link">
-              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
-                alt="Фотография товара: Ананас">
-              <span class="product__circle"></span>
-              <span class="sr-only">Перейти на страницу товара: Ананас</span>
-            </a>
-            <div class="product__info">
-              <h3 class="product__title">
-                Ананас, 1 кг
-              </h3>
-              <span class="product__price">
-                999<span class="product__currency">₽</span>
-              </span>
-            </div>
-            <div class="product__footer">
-              <div class="product__quantity quantity" data-step="1" data-min="1" data-max="99">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--minus" type="button"></button>
-                <input class="quantity__text" type="text" name="count" value="1">
-                <button class="style-btn style-btn--green quantity__btn quantity__btn--plus" type="button"></button>
-              </div>
-              <span class="product__price">
-                1998<span class="product__currency">₽</span>
-              </span>
-            </div>
-          </article>
-        </li>
-        <li class="cart-modal__item">
-          <article class="cart-modal__product product">
-            <a href="#" class="product__link">
-              <img class="product__img" width="60" height="60" src="pictures/products/01.jpg"
-                alt="Фотография товара: Ананас">
-              <span class="product__circle"></span>
-              <span class="sr-only">Перейти на страницу товара: Ананас</span>
-            </a>
-            <div class="product__info">
-              <h3 class="product__title">
-                Ананас, 1 кг
+                <a class="product__title-link" href="#">Ананас, 1 кг</a>
               </h3>
               <span class="product__price">
                 999<span class="product__currency">₽</span>
@@ -586,7 +313,7 @@
     </div>
   </div>
 </div>
-  
+
   <main class="page">
         <section class="discounts">
       <ul class="discounts__list">
@@ -731,7 +458,7 @@
             <span class="sr-only">Добавить товар: Ананас в избранное</span>
           </button>
           <a href="#" class="product__link">
-            <img class="product__img" width="100%" height="215" src="pictures/products/01.jpg"
+            <img class="product__img" width="298" height="215" src="pictures/products/01.jpg"
               alt="Фотография товара: Ананас">
             <span class="product__circle"></span>
             <span class="sr-only">Перейти на страницу товара: Ананас</span>
@@ -850,7 +577,7 @@
         </article>
       </li>
 
-      <li class="bestsellers__item mix category-fruits">
+      <li class="bestsellers__item mix category-grocery">
         <article class="bestsellers__product product">
           <div class="product__statuses">
           </div>
@@ -892,7 +619,7 @@
         </article>
       </li>
 
-      <li class="bestsellers__item mix category-fruits">
+      <li class="bestsellers__item mix category-vegetables">
         <article class="bestsellers__product product">
           <div class="product__statuses">
             <span class="product__status product__status--new">Новинка</span>
@@ -937,7 +664,7 @@
         </article>
       </li>
 
-      <li class="bestsellers__item mix category-fruits">
+      <li class="bestsellers__item mix category-beverages">
         <article class="bestsellers__product product">
           <div class="product__statuses">
             <span class="product__status product__status--discount">-30%</span>
@@ -985,7 +712,7 @@
         </article>
       </li>
 
-      <li class="bestsellers__item mix category-fruits">
+      <li class="bestsellers__item mix category-beverages">
         <article class="bestsellers__product product">
           <div class="product__statuses">
             <span class="product__status product__status--new">Новинка</span>
@@ -1028,7 +755,7 @@
         </article>
       </li>
 
-      <li class="bestsellers__item mix category-fruits">
+      <li class="bestsellers__item mix category-vegetables">
         <article class="bestsellers__product product">
           <div class="product__statuses">
             <span class="product__status product__status--new">Новинка</span>
@@ -1079,74 +806,124 @@
 
   </div>
 </section>
-
     <section class="banner"></section>
     <section class="promo"></section>
     <div class="brand"></div>
     <section class="news"></section>
   </main>
   <footer class="footer">
-  <div class="footer__top">
-    <div class="footer__logo"></div>
-    <div class="footer__content">
-      <form action="">
-        <label for="subscribe">Следите за нашими акциями</label>
-        <input type="text" id="subscribe">
-        <button>Подписаться</button>
-      </form>
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__logo">
+        <a class="logo" href="#">
+          <img class="logo__img" width="200" height="60" src="images/logo.svg" alt="Логотип онлайн-маркета ФрешОк">
+        </a>
+      </div>
+      <div class="footer__content">
+        <form class="footer__subscribe subscribe" action="/">
+          <label class="subscribe__label" for="subscribe">Следите за нашими акциями</label>
+          <div class="subscribe__wrap">
+            <input class="subscribe__email" id="subscribe" type="email" placeholder="email@email.com" name="email"
+              required>
+            <button class="style-btn style-btn--green subscribe__btn" type="submit">Подписаться</button>
+          </div>
+        </form>
 
-      <ul class="footer__menu menu-footer">
-        <li class="menu-footer__list">
-          <a class="menu-footer__link footer-link" href="#">О нас</a>
-        </li>
-        <li class="menu-footer__list">
-          <a class="menu-footer__link footer-link" href="#">Контакты</a>
-        </li>
-        <li class="menu-footer__list">
-          <a class="menu-footer__link footer-link" href="#">Публичная оферта</a>
-        </li>
-        <li class="menu-footer__list">
-          <a class="menu-footer__link footer-link" href="#">Оплата и доставка</a>
-        </li>
-        <li class="menu-footer__list">
-          <a class="menu-footer__link footer-link" href="#">Вакансии</a>
-        </li>
-        <li class="menu-footer__list">
-          <a class="menu-footer__link footer-link" href="#">Акции</a>
-        </li>
-        <li class="menu-footer__list">
-          <a class="menu-footer__link footer-link" href="#">Отзывы</a>
-        </li>
-        <li class="menu-footer__list">
-          <a class="menu-footer__link footer-link" href="#">Новости</a>
-        </li>
-      </ul>
+        <ul class="footer__menu menu-footer">
+          <li class="menu-footer__item">
+            <a class="menu-footer__link footer-link" href="#">О нас</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link footer-link" href="#">Контакты</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link footer-link" href="#">Публичная оферта</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link footer-link" href="#">Оплата и доставка</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link footer-link" href="#">Вакансии</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link footer-link" href="#">Акции</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link footer-link" href="#">Отзывы</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link footer-link" href="#">Новости</a>
+          </li>
 
-      <address class="footer__address">
-        <a class="footer-link" href="tel:+7907288365">Горячая линия +7 907 288 365</a>
-        <p class="footer__text"></p>
-        <ul class="footer__social social">
-          <li class="social__item">
-            <a class="social__link" href="#" target="_blank"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" target="_blank"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" target="_blank"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" target="_blank"></a>
-          </li>
         </ul>
-      </address>
+
+        <address class="footer__address address">
+          <a class="address__tel" href="tel:+7907288365">Горячая линия+7 907 288 365</a>
+          <p class="address__location">Санкт-Петербург, ул. Ленина, 1</p>
+          <ul class="address__social social">
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <svg class="icon icon--facebook">
+                  <use xlink:href="images/icons/icons.svg#facebook"></use>
+                </svg>
+                <span class="sr-only">Мы на facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <svg class="icon icon--youtube">
+                  <use xlink:href="images/icons/icons.svg#youtube"></use>
+                </svg>
+                <span class="sr-only">Мы в YouTube</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <svg class="icon icon--telegram">
+                  <use xlink:href="images/icons/icons.svg#telegram"></use>
+                </svg>
+                <span class="sr-only">Наш канал в Telegram</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <svg class="icon icon--instagram">
+                  <use xlink:href="images/icons/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+
+      </div>
     </div>
   </div>
-  <div class="footer__bottom">
-
+  <div class="footer__bottom footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__wrap">
+        <p class="copyright">© 2021 ФрешОк</p>
+        <ul class="payments">
+          <li class="payments__item">
+            <a class="payments__link" href="#">
+              <svg class="icon icon--visa">
+                <use xlink:href="images/icons/icons.svg#visa"></use>
+              </svg>
+              <span class="sr-only">Принимаем платежи по карте Visa, узнать подробнее.</span>
+            </a>
+          </li>
+          <li class="payments__item">
+            <a class="payments__link" href="#">
+              <svg class="icon icon--mastercard">
+                <use xlink:href="images/icons/icons.svg#mastercard"></use>
+              </svg>
+              <span class="sr-only">Принимаем платежи по карте MasterCard, узнать подробнее.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </footer>
-
   <script src="js/main.min.js"></script>
 </body>
 

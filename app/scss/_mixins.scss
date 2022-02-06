@@ -1,3 +1,4 @@
+// Миксин подключения шрифтов
 @mixin font($family, $file, $weight, $style){
   @font-face {
     font-family: $family;
@@ -11,9 +12,42 @@
   }
 }
 
+// Ограничиваем текст (дефолт 3 строки...)
 @mixin textlimit($line-clamp: 3){
   -webkit-line-clamp: $line-clamp; /* Число отображаемых строк */
   display: -webkit-box; /* Включаем флексбоксы */
   -webkit-box-orient: vertical; /* Вертикальная ориентация */
   overflow: hidden; /* Обрезаем всё за пределами блока */
+}
+
+// Адаптивные значения
+// Адаптивный размер шрифта
+
+  /* Максимальная ширина макета, ниже которой, будем адаптировать верстку */ 
+$maket-w-max: 1200;
+  /* Минимальная ширина макета, ниже которой, значения уже не будем менять */
+$maket-w-min: 375;   
+/*
+        140px   - максимальный отступ
+        50px    - минимальный отступ
+        1200px  - максимальная ширина макета
+        375px   - минимальная ширина макета
+        100vw   - текущая ширина экрана
+ 
+      'значение' = 140-((1200-375)-(100vw-375)*(140-50)/(1200-375))
+*/
+ 
+$maket-w-val: calc($maket-w-max - $maket-w-min);
+$disp-w-val: calc(100vw - $maket-w-min * 1px);
+$p1: calc($maket-w-val * 1px - $disp-w-val);
+
+@mixin font-size($max-val: 60, $min-val: 20) {
+  $value: calc($max-val * 1px - ($p1 * ($max-val - $min-val) / $maket-w-val)); 
+  font-size: $max-val * 1px;
+  @media (max-width: $maket-w-max * 1px) {
+    font-size: $value;
+  }
+  @media (max-width: $maket-w-min * 1px) {
+    font-size: $min-val * 1px;
+  }  
 }
