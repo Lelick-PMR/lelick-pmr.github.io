@@ -51,3 +51,88 @@ $p1: calc($maket-w-val * 1px - $disp-w-val);
     font-size: $min-val * 1px;
   }  
 }
+
+@mixin flex-size($property: 'padding', $max-val: 60, $min-val: 20) {
+  $value: calc($max-val * 1px - ($p1 * ($max-val - $min-val) / $maket-w-val)); 
+
+  @if $property == padding {
+    padding: $max-val * 1px;
+    @media (max-width: $maket-w-max * 1px) {
+      padding: $value;
+    }
+    @media (max-width: $maket-w-min * 1px) {
+      padding: $min-val * 1px;
+    }  
+  }
+
+  @if $property == margin {
+    margin: $max-val * 1px;
+    @media (max-width: $maket-w-max * 1px) {
+      margin: $value;
+    }
+    @media (max-width: $maket-w-min * 1px) {
+      margin: $min-val * 1px;
+    }  
+  }
+  
+  @if $property == width {
+    width: $max-val * 1px;
+    @media (max-width: $maket-w-max * 1px) {
+      width: $value;
+    }
+    @media (max-width: $maket-w-min * 1px) {
+      width: $min-val * 1px;
+    }  
+  }
+    
+  @if $property == height {
+    height: $max-val * 1px;
+    @media (max-width: $maket-w-max * 1px) {
+      height: $value;
+    }
+    @media (max-width: $maket-w-min * 1px) {
+      height: $min-val * 1px;
+    }  
+  }
+
+  @if $property == max-width {
+    max-width: $max-val * 1px;
+    @media (max-width: $maket-w-max * 1px) {
+      max-width: $value;
+    }
+    @media (max-width: $maket-w-min * 1px) {
+      max-width: $min-val * 1px;
+    }  
+  }
+
+  @if $property == max-height {
+    max-height: $max-val * 1px;
+    @media (max-width: $maket-w-max * 1px) {
+      max-height: $value;
+    }
+    @media (max-width: $maket-w-min * 1px) {
+      max-height: $min-val * 1px;
+    }  
+  }
+
+  @if $property == min-width {
+    min-width: $max-val * 1px;
+    @media (max-width: $maket-w-max * 1px) {
+      min-width: $value;
+    }
+    @media (max-width: $maket-w-min * 1px) {
+      min-width: $min-val * 1px;
+    }  
+  }
+
+  @if $property == min-height {
+    min-height: $max-val * 1px;
+    @media (max-width: $maket-w-max * 1px) {
+      min-height: $value;
+    }
+    @media (max-width: $maket-w-min * 1px) {
+      min-height: $min-val * 1px;
+    }  
+  }
+
+}
