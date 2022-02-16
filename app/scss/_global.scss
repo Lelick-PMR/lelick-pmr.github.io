@@ -217,14 +217,18 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  color: $dark-900;
+  @media (max-width: $md1) {
+    @include font-size(32, 24);
+  }
+  @media (max-width: $md3) {
+    font-size: 24px;
+  }
 }
 
-.filter {
+.nav {
   &__item {
-    &:not(:last-child) {
-      margin-right: 24px;
-    }
+    margin: 0 12px 15px;
   }
 
   &__btn {
@@ -236,6 +240,11 @@ body {
     border-radius: 3px;
     transition: box-shadow, color;
     transition-duration: $animTime;
+
+    @media (max-width: $md3) {
+      font-size: 14px;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -345,8 +354,16 @@ body {
     border-radius: 3px;
     transition: box-shadow;
     transition-duration: $animTime;
+    @media (max-width: $md2) {
+      right: 1px;
+      top: 6px;
+    }
     .icon {
       fill: $silver-600;
+      @media (max-width: $md2) {
+        width: 24px;
+        height: 21px;
+      }
     }
 
     &:focus {
@@ -381,6 +398,9 @@ body {
     align-items: center;
     transition: opacity $animTime;
     margin-bottom: 18px;
+      @media (max-width: $md2) {
+        margin-bottom: 9px;
+    }
     &::before {
       content: '';
       opacity: 0;
@@ -448,6 +468,9 @@ body {
     line-height: 1.4;
     letter-spacing: 0.03em;
     color: $dark-900;
+    @media (max-width: $md2) {
+      margin: 0 11px auto;
+    }
   }
 
   &__title-link {
@@ -470,8 +493,12 @@ body {
 
   &__footer {
     display: flex;
+    flex-wrap: wrap;
     margin: 9px 17px 17px 20px;
     align-items: center;
+      @media (max-width: $md2) {
+        margin: 13px 11px 11px 11px;
+    }
   }
 
   &__prices {
@@ -510,6 +537,13 @@ body {
   &__quantity {
     display: flex;
     margin-right: 24px;
+    @media (max-width: $md2) {
+      order: -1;
+      flex: 1 1 100%;
+      margin: 0;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
   }
 
   &__btn-add-to-cart {
@@ -522,7 +556,8 @@ body {
 
 .quantity {
   &__text {
-    width: 30px;
+    font-size: 16px;
+    width: 36px;
     border: none;
     text-align: center;
     outline: transparent;
@@ -532,8 +567,8 @@ body {
 
   &__btn {
     position: relative;
-    height: 22px;
-    width: 22px;
+    height: 24px;
+    width: 24px;
     padding: 4px;
     &::before {
       content: '';
@@ -568,7 +603,8 @@ body {
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  transition: .3s;
+  transition: opacity, visibility;
+  transition-duration: $animTime;
   top: -100%;
   right: 0;
   bottom: 0;
@@ -581,13 +617,15 @@ body {
   &--cart {
     justify-content: end;
     align-items: flex-start;
+    transition: opacity, visibility, top;
+    transition-duration: $animTime;
   }
 
   &--active {
     top: 0;
     visibility: visible;
     opacity: 1;
-    transition: .3s;
+
   }
 
   &__cart {
